@@ -1,0 +1,184 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+#section-one {
+    width: auto;
+    max-width: 100%;
+    overflow-x: clip;
+    min-height: 100%;
+    padding: 48px 28px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(circle at 100% 0,#00042e,#060049);
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+}
+#section-one h1 {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    line-height: 44px;
+    margin-bottom: 50px;
+}
+.parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 16px;
+grid-row-gap: 12px;
+}
+.card{
+    width: 388px;
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(80,135,255,.38);
+    border-radius: 20px;
+    padding: 0 10px 10px 10px;
+    overflow: clip;
+    transition: all .65s ease-in-out;
+    transform: scale(0.98)
+}
+.card:hover{
+    transform: scale(1.03);
+}
+.card .hb{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 6px;
+}
+.hb img.cc{
+    width: 41px;
+    height: 41px;
+}
+.hb .ct{
+    color: #fff;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+.card .text-block{
+    color: #c4c8f0;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+}
+.card1 { grid-area: 1 / 1 / 2 / 2; }
+.card2 { grid-area: 1 / 2 / 2 / 3; }
+.card3 { grid-area: 1 / 3 / 2 / 4; }
+.card4 { grid-area: 2 / 1 / 3 / 2; }
+.card5 { grid-area: 2 / 2 / 3 / 3; }
+.card6 { grid-area: 2 / 3 / 3 / 4; }
+
+
+/* responsive */
+@media screen and (max-width: 1024px){
+*{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+    #section-one {
+padding: 28px 2vw;
+}
+#section-one h1 {
+    font-size: 30px;
+    line-height: 40px;
+    width: 86vw;
+    text-align: center;
+}
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card{
+    width: 88vw;
+    max-width: 396px;
+    margin: 4px 0;
+}
+.hb .ct{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+.card .text-block{
+    font-size: 10px;
+}
+}
+</style>
+<section id="section-one">
+    <h1>Explorer 10 modèles de notes de réunion automatiques</h1>
+    <div class="parent">
+
+        <div class="card card1">
+            <div class="hb">
+                <img class="cc" src="./assets/card1.png">
+                <div class="ct">Entretien d'embauche </div>
+            </div>
+            <div class="text-block">
+                Conservez des informations essentielles sur vos candidats, telles que les qualifications, l'expérience, les compétences et les prétentions salariales.
+            </div>
+        </div>
+
+        <div class="card card2">
+            <div class="hb">
+                <img class="cc" src="./assets/card2.png">
+                <div class="ct">Découverte des ventes</div>
+            </div>
+            <div class="text-block">
+                Transformer le résumé de la réunion en objections, suggestions et détails des futures collaborations
+            </div>
+        </div>
+
+        <div class="card card3">
+            <div class="hb">
+                <img class="cc" src="./assets/card3.png">
+                <div class="ct">Réunion d'équipe</div>
+            </div>
+            <div class="text-block">
+                Gardez une trace des ordres du jour, des actions et des discussions lors de vos réunions de collaboration d'équipe ou de synchronisation.
+            </div>
+        </div>
+
+        <div class="card card4">
+            <div class="hb">
+                <img class="cc" src="./assets/card4.png">
+                <div class="ct">Podcast</div>
+            </div>
+            <div class="text-block">
+                Des informations sur les invités aux points forts et aux résumés d'épisodes Enregistrez votre podcast et appréciez le résumé de l'IA dans ce modèle maintenant
+            </div>
+        </div>
+        <div class="card card5">
+            <div class="hb">
+                <img class="cc" src="./assets/card5.png">
+                <div class="ct">Entretien de recherche</div>
+            </div>
+            <div class="text-block">
+                Des mises à jour de cours aux progrès des étudiants en passant par la recherche et les projets, ce modèle présente vos résumés sous forme d'informations organisées.
+            </div>
+        </div>
+        <div class="card card6">
+            <div class="hb">
+                <img class="cc" src="./assets/card6.png">
+                <div class="ct">Interview d'un utilisateur</div>
+            </div>
+            <div class="text-block">
+                Des informations sur l'utilisateur aux idées, problèmes, commentaires et suggestions - tout est regroupé dans un seul ordre grâce à l'assistant de réunion AI Magical Noota.
+            </div>
+        </div>
+        </div>
+</section>
